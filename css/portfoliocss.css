@@ -1,0 +1,240 @@
+/*CSS for PORTFOLIO website*/
+
+body{
+	font-family: 'Nanum Gothic Coding', monospace;
+    margin: 0;
+}
+
+table:{
+	position: fixed;
+    font-size: 1.2em;
+}
+
+td{
+	text-align: center;
+	padding-left: 20px;
+    font-size: 1.2em;
+}
+
+a:link, a:visited{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color: black;
+	text-decoration: underline;
+}
+
+/*this part sets the background for the home page*/
+/*(will insert credit here later)*/
+#BGslides{
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 60s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../images/new-slideshow/Big%20Head%20Details.jpg');
+}
+
+@keyframes slideBg{
+    0% { 
+        background-image: url('../images/new-slideshow/Big%20Head%20Details.jpg'), url(../images/new-slideshow/Fallen%20Angels%20Linocut.jpg);
+    }
+    8.3%{
+        background-image: url(../images/new-slideshow/Fallen%20Angels%20Linocut.jpg), url(../images/new-slideshow/Home%20Sweet%20Home.jpg);
+    }
+    16.6%{
+        background-image: url(../images/new-slideshow/Home%20Sweet%20Home.jpg), url(../images/new-slideshow/Howdy%20Intaglio.jpg);
+    }
+    25%{
+        background-image: url(../images/new-slideshow/Howdy%20Intaglio.jpg), url(../images/new-slideshow/Riot%20Grrrl%20Zine%20Mockup%20Cropped.png);
+    }
+    33.3%{
+        background-image: url(../images/new-slideshow/Riot%20Grrrl%20Zine%20Mockup%20Cropped.png), url(../images/new-slideshow/Self%20Portrait%20in%20the%20Window.jpg);
+    }
+    41.6%{
+        background-image: url(../images/new-slideshow/Self%20Portrait%20in%20the%20Window.jpg), url(../images/new-slideshow/Skateboard%20Butterfly.jpg);
+    }
+    50%{
+        background-image: url(../images/new-slideshow/Skateboard%20Butterfly.jpg), url(../images/new-slideshow/Train%20Screencap%201.png);
+    }
+    58.3%{
+        background-image: url(../images/new-slideshow/Train%20Screencap%201.png), url(../images/new-slideshow/Soup_03.png);
+    }
+    66.6%{
+        background-image: url(../images/new-slideshow/Soup_03.png), url(../images/new-slideshow/Streamer%20Illustration.jpg);
+    }
+    75%{
+        background-image: url(../images/new-slideshow/Streamer%20Illustration.jpg), url(../images/new-slideshow/Train%20Screencap%202.png);
+    }
+    83.3%{
+        background-image: url(../images/new-slideshow/Train%20Screencap%202.png), url(../images/new-slideshow/Two%20Figure%20Drawings.jpg);
+    }
+    91.6%{
+        background-image: url(../images/new-slideshow/Two%20Figure%20Drawings.jpg), url(../images/new-slideshow/Big%20Head%20Details.jpg);
+    }
+}
+/*home page background end*/
+
+#invert{ mix-blend-mode: difference;}
+
+.clear{
+	clear: both;
+}
+
+.top{
+	position: fixed;
+	top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@font-face { font-family: PicNic; src: url(../fonts/'PicNic-Regular.otf'); } 
+
+.logo, .logo:visited, .logo:hover, .logo:active{
+	float: left;
+	font-family: 'PicNic';
+	font-size: 1.8em;  
+    padding: 10px 20px 15px 20px;
+	color: black;
+}
+
+.navbar{
+	float: right;
+    font-family: 'Nanum Gothic Coding', monospace;
+	padding-top: 20px;
+	margin-right: 20px;
+}
+
+.pagetitle, #hometitle{
+	clear: both;
+	position: fixed;
+	top: 200px;
+	margin-left: 150px;
+	font-size: 4em;
+    font-weight: bold;
+}
+
+#hometitle{ 
+    color: rgb(80,0,70);
+    mix-blend-mode: difference;
+}
+
+.contact{
+    position: fixed;
+    top: 300px;
+	margin-left: 160px;
+}
+
+.link:link{
+    color: blue;
+    text-decoration: none;
+}
+.link:visited{
+    color: blue;
+    text-decoration: none;
+}
+.link:hover{
+    color: orange;
+}
+
+.cap{
+    color: black;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.bold{ font-weight: bold;}
+
+#skater, #finn, #jasmine, #joey, #will, #beetle, #mushrooms, #ferret, #timeline, #selfiegif, #coreportrait, #soup03, #rgmockup{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#skater{ height: 800px; width: 800px; }
+#finn{ height: 900px; width: 700px; }
+#jasmine{ height: 900px; width: 700px; }
+#joey{ height: 900px; width: 700px; }
+#will{ height: 800px; width: 560px; }
+#beetle{ height: 800px; }
+#mushrooms{ height: 900px; width: 900px; }
+#ferret{ height: 500px; width: 800px; }
+#trainvid{ height: 315px; width: 560px; }
+#timeline{ height: 1000px; width: 800px; }
+#bahamas1{ height: 600px; }
+#bahamas2{ height: 600px; }
+#selfiegif{ height: 500px; width: 350px; }
+#coreportrait{ height: 700px; padding-top: 60px; }
+#soup03{ height: 900px; }
+#rgmockup{ width: 600px; }
+
+#restitle{
+	clear: both;
+	margin-top: 200px;
+	font-size: 3em;
+	margin-left: 50px;
+}
+
+#reshead{
+	margin-top: 20px;
+	margin-left: 50px;
+	line-height: 20px;
+}
+
+#rescontainer{
+	width: 800px;
+}
+
+#resleft, #resright{ color: #757575; line-height: 20px; }
+#resleft{
+	margin-top: 30px;
+	float: left;
+	padding-left: 50px;
+}
+#resright{
+	margin-top: 40px;
+	float: right;
+	padding-left: 20px;
+}
+
+#bioimg{
+    display: block;
+    height: 500px;
+    width: 630px;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#biocontainer{
+    margin: auto;
+    margin-top: 20px;
+    width: 700px;
+    height: 400px;
+}
+
+#biobody{
+    text-align: justify;
+    line-height: 20px;
+}
+
+#zinepdf{
+    height: 500px;
+    width: 400px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#zinepgtitle{
+    text-align: center;
+    font-size: 2em;
+    color: hotpink;
+    padding-top: 100px;
+}
